@@ -62,7 +62,7 @@ public class TugasKelompok1 {
         System.out.println("Total Pembelian setelah disc 10 %                = Rp.      " +df.format(total - disc));
         System.out.println("Pembelian per orang <untuk 8 orang>             = Rp.       " +df.format(totalHarga / jumlahOrang));
         System.out.println("\n");
-        System.out.println("                 Terima Kasih Atas Kunjungan Anda...");
-        System.out.println("                 ....Tekan ENTER untuk keluar...");
+        System.out.println("                     Terima Kasih Atas Kunjungan Anda...");
+        System.out.println("                     ....Tekan ENTER untuk keluar...");
     }
 }
