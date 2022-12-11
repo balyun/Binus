@@ -45,24 +45,4 @@ public class TugasKelompok1 {
         System.out.println("\n");
         System.out.println("Pembelian :");
         
-        System.out.println("Nasi Goreng Spesial       "+pesanan1+ " porsi * Rp. 9999.99 = Rp.       "+pesanan1 * 9999.99);
-        System.out.println("Ayam Bakar Spesial        "+pesanan2+ " porsi * Rp.12345.67 = Rp.       "+pesanan2 * 12345.67);
-        System.out.println("Steak Sirloin Spesial     "+pesanan3+ " porsi * Rp.21108.40 = Rp.       "+df.format(pesanan3 * 21108.40));
-        System.out.println("Kwetiaw Siram Spesial     "+pesanan4+ " porsi * Rp.13579.13 = Rp.       "+pesanan4 * 13579.13);
-        System.out.println("Kambing Guling Spesial    "+pesanan5+ " porsi * Rp.98765.43 = Rp.       "+df.format(pesanan5 * 98765.43));
-        System.out.println("======================================================================");
         
-        double total = (pesanan1 * 9999.99)+(pesanan2 * 12345.67)+(pesanan3 * 21108.40)+(pesanan4 * 13579.13)+(pesanan5 * 98765.43);
-        double disc = total * 10/100;
-        double totalHarga = total - disc;
-        System.out.println("Total Pembelian                                 = Rp.       " +df.format(total));
-        System.out.println("\n");
-        System.out.println("Disc 10%  <Masa Promosi>                        = Rp.       " +df.format(total * 10/100) +" -");
-        System.out.println("======================================================================");
-        System.out.println("Total Pembelian setelah disc 10 %                = Rp.      " +df.format(total - disc));
-        System.out.println("Pembelian per orang <untuk 8 orang>             = Rp.       " +df.format(totalHarga / jumlahOrang));
-        System.out.println("\n");
-        System.out.println("                     Terima Kasih Atas Kunjungan Anda...");
-        System.out.println("                     ....Tekan ENTER untuk keluar...");
-    }
-}
