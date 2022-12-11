@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 public class TugasKelompok1 {
 
     public static void main(String[] args) {
+        double h1 = 9999.99, h2 = 12345.67, h3 = 21108.40, h4 = 13579.13, h5 = 98765.43;
     String namaPemesan;
         int jumlahOrang, jumlahPesanan;
         DecimalFormat df = new DecimalFormat("#.##");
@@ -27,22 +28,45 @@ public class TugasKelompok1 {
         System.out.println("5. Kambing Guling Spesial         @   Rp. 98765.43");
         
         System.out.println("\n");
-        System.out.println("Pesanan Anda [batas pesanan 0-10 po]");
-        System.out.print("Nasi GOreng Spesial       =");
+        System.out.println("Pesanan Anda [batas pesanan 0-10 porsi]");
+        System.out.print("Nasi Goreng Spesial       =");
         Scanner inputPesanan = new Scanner(System.in);
-        int pesanan1 = inputPesanan.nextInt();
+        int menu1 = inputPesanan.nextInt();
         System.out.print("Ayam Bakar Spesial        =");
-        int pesanan2 = inputPesanan.nextInt();
+        int menu2 = inputPesanan.nextInt();
         System.out.print("Steak Sirloin Spesial     =");
-        int pesanan3 = inputPesanan.nextInt();
+        int menu3 = inputPesanan.nextInt();
         System.out.print("Kwetiaw Siram Spesial     =");
-        int pesanan4 = inputPesanan.nextInt();
+        int menu4 = inputPesanan.nextInt();
         System.out.print("Kambing Gule Spesial      =");
-        int pesanan5 = inputPesanan.nextInt();
+        int menu5 = inputPesanan.nextInt();
         
         System.out.println("\n");   
         System.out.println("Selamat Menikmati Makanan Anda...");
         System.out.println("\n");
         System.out.println("Pembelian :");
+        
+         System.out.println("1. Nasi Goreng Spesial " + menu1 + " porsi * " + h1 + " = Rp. " +
+df.format(menu1*h1));
+ System.out.println("2. Ayam Bakar Spesial " + menu2 + " porsi * " + h2 + " = Rp. " +
+df.format(menu2*h2));
+ System.out.println("3. Steak Sirloin Spesial " + menu3 + " porsi * " + h3 + " = Rp. " +
+df.format(menu3*h3));
+ System.out.println("4. Kwetiaw Siram Spesial " + menu4 + " porsi * " + h4 + " = Rp. " +
+df.format(menu4*h4));
+ System.out.println("5. Kambing Guling Spesial " + menu5 + " porsi * " + h5 + " = Rp. " +
+df.format(menu5*h5));
+
+System.out.println("===========================================================+");
+ double total = menu1*h1 + menu2*h2 + menu3*h3 + menu4*h4 + menu5*h5;
+ System.out.println("Total pembelian = Rp. " + total);
+ double diskon = total*10/100;
+ System.out.println("Disc. 10% < Masa Promosi > = Rp. " +
+df.format(diskon));
+
+System.out.println("===========================================================-");
+        
+    }
+}
         
         
